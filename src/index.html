@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipment Tracker</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #111;
+    }
+
+    .status-card {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 18px 22px;
+      margin-bottom: 18px;
+      border-left: 6px solid #ccc;
+      background: #f1f1f1;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .status-card.completed {
+      border-left-color: #28a745;
+      background: linear-gradient(to right, #d8f5e0, #e8fce9);
+    }
+
+    .status-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .status-date {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .status-card.completed .status-title {
+      color: #155724;
+    }
+
+    .status-icon {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .status-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🚚 Shipment Status</h2>
+
+  <div class="status-card completed">
+    <div class="status-row">
+      <span class="status-icon">✅</span>
+      <span class="status-title">Goods Loaded to Container</span>
+    </div>
+    <div class="status-date">Last Updated: 06/06/2025</div>
+  </div>
+
+  <div class="status-card completed">
+    <div class="status-row">
+      <span class="status-icon">🚢</span>
+      <span class="status-title">Estimated Port Deliver (ETD)</span>
+    </div>
+    <div class="status-date">Last Updated: 09/06/2025</div>
+  </div>
+
+  <div class="status-card-completed">
+    <div class="status-row">
+      <span class="status-icon">📍</span>
+      <span class="status-title">Estimated Port Arrival (ETA)</span>
+    </div>
+    <div class="status-date">Last Updated: 13/06/2025 </div>
+  </div>
+
+  <div class="status-card">
+    <div class="status-row">
+      <span class="status-icon">🏢</span>
+      <span class="status-title">Distribution Warehouse Arrival</span>
+    </div>
+    <div class="status-date">Not yet updated</div>
+  </div>
+</div>
+
+</body>
+</html>

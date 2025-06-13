@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.status-box {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-left: 6px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: background-color 0.4s, border-left-color 0.4s;
+}
+
+.status-box.completed {
+  background-color: #e8fbe8;
+  border-left-color: #28a745;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
